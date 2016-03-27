@@ -1,0 +1,16 @@
+{
+  "name": "Example app",
+  "description": "Webpack example",
+  "keywords": [
+    "webpack",
+  ],
+  "success_url": "/",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs",
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-ruby"
+    }
+  ]
+}

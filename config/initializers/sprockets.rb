@@ -12,6 +12,7 @@ class WebpackProcessor
       bundle.read
     end
 
+    puts compiled_bundle
     {data: compiled_bundle}
   end
 end

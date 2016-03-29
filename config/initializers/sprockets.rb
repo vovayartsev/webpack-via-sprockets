@@ -2,7 +2,6 @@ class WebpackProcessor
   Error = Class.new(RuntimeError)
 
   def call(input)
-    puts "Compilation started"
     webpack_binary = Rails.root.join 'node_modules/.bin/webpack'
     config = Rails.root.join 'config/webpack.config.js'
     entry = input[:filename]
@@ -13,11 +12,8 @@ class WebpackProcessor
       bundle.read
     end
 
-    puts "Compilation finished"
     {data: compiled_bundle}
   end
 end
 
 Sprockets.register_preprocessor('application/javascript', WebpackProcessor.new)
-
-puts "Initializer worked"

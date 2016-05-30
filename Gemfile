@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'sprockets_require_webpack', path: 'gems/sprockets_require_webpack'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

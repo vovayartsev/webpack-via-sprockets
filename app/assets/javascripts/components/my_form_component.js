@@ -31,7 +31,7 @@ class MyForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    window.alert(`Submitting ${this.props.user.name}`);
+    store.dispatch(action)
   }
 }
 

@@ -1,1 +1,1 @@
-//= require app
+//= require_webpack_tree ../webpack
